@@ -69,7 +69,7 @@ As a precondition, you should have Docker Engine installed. More information on 
 
 `docker build -t empty_image .`
 
-Here the new image is named postit_image. After successfully creating the image, you can find it in the list of images by typing `docker image ls`.
+Here the new image is named empty_image. After successfully creating the image, you can find it in the list of images by typing `docker image ls`.
 
 #### Create and run a container based on the image:
 
