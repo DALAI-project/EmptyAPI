@@ -91,6 +91,8 @@ You can test the `/empty` endpoint of the API for example using curl:
 
 `curl http://127.0.0.1:8000/empty -F file=@/path/img.jpg`
 
+NB! Windows users might encounter following error `Invoke-WebRequest : A parameter cannot be found that matches parameter name 'F'.`. This can be bypassed by running a command `Remove-item alias:curl`.
+
 The second option is to send the path to the image file with the http request:
 
 `curl http://127.0.0.1:8000/emptypath?path=/path/img.jpg`
