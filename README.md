@@ -53,7 +53,7 @@ Select different host / port:
 
 `uvicorn api:app --host 0.0.0.0 --port 8080`
 
-#### You can also start the API with Gunicorn as the process manager (find more information [here](https://fastapi.tiangolo.com/deployment/server-workers/)):
+#### You can also start the API with Gunicorn as the process manager (find more information [here](https://fastapi.tiangolo.com/deployment/server-workers/)) (NB! does not work on Windows):
 
 `gunicorn api:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8080`
 
