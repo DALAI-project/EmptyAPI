@@ -80,6 +80,10 @@ Here the new image is named empty_image. After successfully creating the image, 
 In the Dockerfile, port 8000 is exposed, meaning that the container listens to that port. In the above command, the corresponding host port can be chosen as the first element in `-p <host-port>:<container-port>`. If only the container port is specified, Docker will automatically select a free port as the host port. 
 The port mapping of the container can be viewed with the command `sudo docker port empty_container`
 
+## Logging
+
+Logging events are saved into a file `api_log.log` in the same folder where the `api.py` file is located. Previous content of the log file is overwritten after each restart. More information on different logging options is available [here](https://docs.python.org/3/library/logging.html).
+
 ## Testing the API
 
 The API has three endpoints: `/empty` endpoint expects the input image to be included in the client's POST request, while  
