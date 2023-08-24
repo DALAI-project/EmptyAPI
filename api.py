@@ -14,7 +14,7 @@ import requests
 logging.basicConfig(filename='api_log.log', filemode='w', format='%(asctime)s %(message)s', datefmt='%d/%m/%Y %H:%M:%S', level=logging.INFO)
 
 # Path to pretrained model
-MODEL_PATH = './model/empty_model_v4.onnx'
+MODEL_PATH = './model/empty_v5_24_08_23.onnx'
 # Input image size
 IMG_SIZE = 224
 
